@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-basic",
+  "version": "1.0.0",
+  "description": "A simple node js basic practically",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilham Muhammad",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

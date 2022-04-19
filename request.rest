@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/2
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ilham Muhammad",
+    "email": "ilhamhd98@gmail.com",
+    "gender": "male"
+}
+
+###
+PATCH http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+    "name": "Bambang",
+    "email": "bambang@gmail.com",
+    "gender": "male"
+}
+
+###
+DELETE  http://localhost:5000/users/3
