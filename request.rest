@@ -1,4 +1,5 @@
 GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJJbGhhbSBNdWhhbW1hZCIsImVtYWlsIjoiaWxoYW1oZDk4QGdtYWlsLmNvbSIsImlhdCI6MTY1MDQzMzA3OSwiZXhwIjoxNjUwNDMzMDk0fQ.MqrHGiJFSRishTIIN_FdDlpRKwRzi7egFwygdhUYRE8
 
 ###
 GET http://localhost:5000/users/2
@@ -9,7 +10,7 @@ Content-Type: application/json
 
 {
     "name": "Ilham Muhammad",
-    "email": "ilhamhd98@gmail.com",
+    "username": "ilhamhmmd",
     "gender": "male"
 }
 
@@ -19,9 +20,38 @@ Content-Type: application/json
 
 {
     "name": "Bambang",
-    "email": "bambang@gmail.com",
+    "username": "bambang@gmail.com",
     "gender": "male"
 }
 
 ###
-DELETE  http://localhost:5000/users/3
+DELETE  http://localhost:5000/users/5
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "Ilham Muhammad",
+    "username": "ilhamhmmd",
+    "password": "ilham@123",
+    "confPassword": "ilham@123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "ilhamhmmd",
+    "password": "qwqwqw"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+###
+GET http://localhost:5000/weathers
